@@ -1,0 +1,6 @@
+---
+- hosts: all
+  remote_user: root
+  tasks:
+    - name: Install kubectl, kubeadm and kubelet on all nodes
+      script: ./scripts/install-kube-elems.sh

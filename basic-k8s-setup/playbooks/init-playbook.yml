@@ -1,0 +1,6 @@
+---
+- hosts: all
+  remote_user: root
+  tasks:
+    - name: Run the init script on control nodes
+      script: ./scripts/setup-and-initialization.sh
